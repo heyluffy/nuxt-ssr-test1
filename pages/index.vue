@@ -27,7 +27,7 @@ import Logo from '~/components/Logo.vue'
 export default {
   async asyncData({ $axios }) {
     var {data} = await $axios.request({
-      url: 'http://127.0.0.1:8584/rest/JcYhglManage/select',
+      url: '/rest/JcYhglManage/select',
       method: 'POST',
       data: {
         dwbh: 1018

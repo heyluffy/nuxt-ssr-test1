@@ -47,7 +47,8 @@ module.exports = {
   ],
   axios: {
     proxy: false,
-    credentials: true
+    credentials: true,
+    baseURL: 'http://172.16.18.25:8584'
   },
   // proxy: {
   //   '/rest': {
