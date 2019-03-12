@@ -49,11 +49,11 @@ module.exports = {
     proxy: true,
     credentials: true
   },
-  // proxy: {
-  //   '/rest': {
-  //     target: 'http://172.16.18.25:8581'
-  //   }
-  // },
+  proxy: {
+    '/rest': {
+      target: 'http://172.16.18.25:8581'
+    }
+  },
 
   /*
   ** Build configuration

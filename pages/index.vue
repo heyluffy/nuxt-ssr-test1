@@ -1,5 +1,6 @@
 <template>
-  <el-table
+  <div>test</div>
+  <!-- <el-table
       :data="tableData"
       style="width: 100%">
       <el-table-column
@@ -14,7 +15,7 @@
         prop="bmmc"
         label="部门名称">
       </el-table-column>
-    </el-table>
+    </el-table> -->
 </template>
 
 <script>
@@ -26,18 +27,18 @@ import Logo from '~/components/Logo.vue'
 
 export default {
   async asyncData({ $axios }) {
-    var {data} = await $axios.request({
-      url: '/rest/JcYhglManage/select',
-      method: 'POST',
-      data: {
-        dwbh: 1018
-      }
-    });
-    console.log(111111, data);
+    // var {data} = await $axios.request({
+    //   url: '/rest/JcYhglManage/select',
+    //   method: 'POST',
+    //   data: {
+    //     dwbh: 1018
+    //   }
+    // });
+    // console.log(111111, data);
     
-    return {
-      tableData: data
-    }
+    // return {
+    //   tableData: data
+    // }
   },
   components: {
     Logo
